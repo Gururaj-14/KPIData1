@@ -4,7 +4,7 @@ stages {
 stage('Build') {
 steps{
 script{
-
+sh 'rm -r KPIData1'
 sh 'git clone "https://github.com/Gururaj-14/KPIData1.git"'
 sh ' cd KPIData1'
 echo 'build'
