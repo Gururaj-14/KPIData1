@@ -1,0 +1,14 @@
+pipeline {
+agent any
+stages {
+stage('Build') {
+steps{
+script{
+git clone "https://github.com/Gururaj-14/KPIData1.git"
+cd KPIData1
+g++ hello_world.cpp
+}
+}
+}
+}
+}
